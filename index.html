@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traffico</title>
+    <title>RccG HoD</title>
     <link rel="stylesheet" href="output.css">
     <link rel="icon" type="image/x-icon" href="images/traffico.png">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -16,7 +16,7 @@
     <!-- Header start here -->
     <header class="fixed w-full h-20 bg-[#021049] z-10 transition-all delay-150" :class="{'h-20': !scrolledFromTop, 'h-16': scrolledFromTop}" :class="{'overflow-hidden': navBarOpen, 'overflow-auto': !navBarOpen}">
         <div class="container mx-auto flex justify-between items-center text-white px-5 py-6 transition-all delay-150" :class="{'py-6': !scrolledFromTop, 'py-4': scrolledFromTop}">
-            <a href="#" class="text-2xl font-medium transition-all delay-150" :class="{'text-2xl': !scrolledFromTop, 'text-xl': scrolledFromTop}">Traffi<span style="color: #FE6B7E;">CO</span></a>
+            <a href="#" class="text-2xl font-medium transition-all delay-150" :class="{'text-2xl': !scrolledFromTop, 'text-xl': scrolledFromTop}"><img src="images/rccg-logo-unscreen.gif" width="80" height="80" alt=""></a>
             <nav>
                 <button class="md:hidden" @click="navBarOpen = ! navBarOpen">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -47,13 +47,13 @@
                 md:p-0
                 " :class="{'translate-x-full': !navBarOpen, 'translate-x-0': navBarOpen}">
                     <li><a href="#home" @click="navBarOpen = ! navBarOpen" class="hover:text-[#FE6B7E]">Home</a></li>
-                    <li><a href="#about" @click="navBarOpen = ! navBarOpen" class="hover:text-[#FE6B7E]">About</a></li>
-                    <li><a href="#services" @click="navBarOpen = ! navBarOpen" class="hover:text-[#FE6B7E]">Services</a></li>
-                    <li><a href="#price" @click="navBarOpen = ! navBarOpen" class="hover:text-[#FE6B7E]">Pricing</a></li>
-                    <li><a href="#pages" @click="navBarOpen = ! navBarOpen" class="hover:text-[#FE6B7E]">Pages</a></li>
-                    <li><a href="#shop" @click="navBarOpen = ! navBarOpen" class="hover:text-[#FE6B7E]">Shop</a></li>
+                    <li><a href="#about" @click="navBarOpen = ! navBarOpen" class="hover:text-[#FE6B7E]">Vision/Mission</a></li>
+                    <li><a href="#services" @click="navBarOpen = ! navBarOpen" class="hover:text-[#FE6B7E]">Programmes</a></li>
+                    <!-- <li><a href="#price" @click="navBarOpen = ! navBarOpen" class="hover:text-[#FE6B7E]">Pricing</a></li> -->
+                    <li><a href="#pages" @click="navBarOpen = ! navBarOpen" class="hover:text-[#FE6B7E]">Branches</a></li>
+                    <!-- <li><a href="#shop" @click="navBarOpen = ! navBarOpen" class="hover:text-[#FE6B7E]">Shop</a></li> -->
                     <li><a href="#contacts" @click="navBarOpen = ! navBarOpen" class="hover:text-[#FE6B7E]">Contacts</a></li>
-                    <li><a href="#" class="px-3 py-2 bg-white text-black rounded-md hover:bg-[#FE6B7E] hover:text-white">Try for free</a></li>
+                    <li><a href="#sub" style="background-color: #940505; color: #fff; " class="px-3 py-2 bg-white text-black rounded-md hover:bg-[#FE6B7E] hover:text-white">Subscribe</a></li>
                 </ul>
             </nav>
 
@@ -61,10 +61,12 @@
 
     </header>
 
+
+
     <!-- header ends here -->
 
     <!-- home section -->
-    <section class="bg-[#021049] text-white min-h-screen grid place-items-center" id="home">
+    <!-- <section class="bg-[#021049] text-white min-h-screen grid place-items-center" id="home">
         <div class="container mx-auto flex flex-col md:flex-row px-5 py-32 md:py-36 items-center">
             <div class="flex flex-col lg:flex-grow md:w-1/2 lg:pr-8 md:items-start md:text-left items-center text-center mb-8 md:mb-0">
                 <h1 class="sm:text-4xl text-3xl mb-4 font-medium">Get Full Control and <br> Visibility of your Company.
@@ -89,7 +91,114 @@
                 <img src="./images/banner3 1.png" alt="">
             </div>
         </div>
-    </section>
+    </section> -->
+
+    <style>
+        #slider {
+            overflow: hidden;
+        }
+        
+        #slider figure {
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation: 20s slider infinite;
+        }
+        
+        #slider figure>div>img {
+            width: 20%;
+            float: left;
+            margin-top: 10vh;
+            height: 80vh;
+        }
+        
+        @keyframes slider {
+            0% {
+                left: 0%;
+            }
+            20% {
+                left: 0%;
+            }
+            25% {
+                left: -100%;
+            }
+            45% {
+                left: -100%;
+            }
+            50% {
+                left: -200%;
+            }
+            70% {
+                left: -200%;
+            }
+            75% {
+                left: -300%;
+            }
+            95% {
+                left: -300%;
+            }
+            100% {
+                left: -400%;
+            }
+        }
+        
+        #h1 {
+            position: absolute;
+        }
+    </style>
+
+    <div id="slider">
+
+        <figure>
+            <div>
+
+                <img src="images/prog.jpg" alt="">
+
+
+
+            </div>
+            <div>
+                <img src="images/prog.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/prog.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/prog.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/prog.jpg" alt="">
+
+            </div>
+        </figure>
+
+    </div>
+
+    <!-- Scroll indicator section -->
+    <style>
+        /* .progress-container {
+            position: fixed;
+            top: 80px;
+            z-index: 1;
+            width: 100%;
+            height: 8px;
+            background: #ccc;
+        } */
+        /* The progress bar (scroll indicator) */
+        /* .progress-bar {
+            height: 8px;
+            background: #940505;
+            width: 0%;
+            transition: 1s;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        } */
+    </style>
+    <!-- <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div> -->
+    <!-- Scroll indicator section ends -->
 
     <!-- home section ends here -->
 
@@ -97,23 +206,23 @@
     <section class="bg-gray-100 min-h-screen grid place-items-center" id="about">
         <div class="container mx-auto px-5 py-32">
             <div class="flex flex-col w-full mb-8 text-center">
-                <h2 class="text-2xl md:text-3xl font-medium mb-4 tracking-wide">With all the Features You Need</h2>
-                <p class="lg:w-1/2 mx-auto leading-relaxed">Credibly grow premier ideas rather than bricks and clicks stratefic theme areas distributed for stand-alone web-readiness</p>
+                <h2 class="text-2xl md:text-3xl font-medium mb-4 tracking-wide">Our Vision/Mission Statements</h2>
+                <p class="lg:w-1/2 mx-auto leading-relaxed"></p>
             </div>
             <div class="flex flex-wrap -m-4 justify-center">
                 <div class="p-4 md:w-1/3 sm:w-1/2 w-full">
                     <div class="border-2 rounded-lg border-gray-300 p-4">
-                        <span class="w-8 h-8 bg-[#175CFF] inline-flex items-center justify-center rounded"><img
-                                class="w-4 h-4" src="./images/apps 6.svg" alt=""></span>
-                        <h5 class="font-medium mt-3">Good Performance</h5>
+                        <span class="w-8 h-8 bg-[#0B163F] inline-flex items-center justify-center rounded"><img
+                                class="w-4 h-4" src="./images/rccg.png" alt=""></span>
+                        <h5 class="font-medium mt-3">To Make Heaven</h5>
                         <p class="mt-1 text-sm">Appropriately grow competitive rather leadership the leadership process sound without state.</p>
                     </div>
 
                 </div>
                 <div class="p-4 md:w-1/3 sm:w-1/2 w-full">
                     <div class="border-2 rounded-lg border-gray-300 p-4">
-                        <span class="w-8 h-8 bg-[#F25767] inline-flex items-center justify-center rounded"><img
-                                class="w-4 h-4" src="./images/apps 6.svg" alt=""></span>
+                        <span class="w-8 h-8 bg-[#0B163F] inline-flex items-center justify-center rounded"><img
+                                class="w-4 h-4" src="./images/rccg.png" alt=""></span>
                         <h5 class="font-medium mt-3">Highly Secure</h5>
                         <p class="mt-1 text-sm">Appropriately grow competitive rather leadership the leadership process sound without state.</p>
                     </div>
@@ -122,7 +231,7 @@
                 <div class="p-4 md:w-1/3 sm:w-1/2 w-full">
                     <div class="border-2 rounded-lg border-gray-300 p-4">
                         <span class="w-8 h-8 bg-[#0B163F] inline-flex items-center justify-center rounded"><img
-                                class="w-4 h-4" src="./images/apps 6.svg" alt=""></span>
+                                class="w-4 h-4" src="./images/rccg.png" alt=""></span>
                         <h5 class="font-medium mt-3">Fast Development</h5>
                         <p class="mt-1 text-sm">Appropriately grow competitive rather leadership the leadership process sound without state.</p>
                     </div>
@@ -133,16 +242,16 @@
             </div>
             <div class="flex flex-wrap -m-4 mt-8">
                 <div class="p-4 md:w-1/2 w-full">
-                    <div class="rounded-lg px-4 py-8 relative overflow-hidden" style="background-color: #FCDDE1;">
+                    <div class="rounded-lg px-4 py-8 relative overflow-hidden" style="background-color: #0B163F;">
                         <div class="pr-24">
-                            <h3 class="font-medium text-lg">Get real time updated anytime</h3>
-                            <p class="mt-3">Progressively reinvent model and niche revolutionary benefits for integrated
+                            <h3 class="font-medium text-lg" style="color: #fff;">Vision</h3>
+                            <p class="mt-3" style="color: #fff;">Progressively reinvent model and revolutionary benefits for integrated
                             </p>
-                            <a href="#" class="px-4 py-2 inline-block mt-2 rounded" style="border: 2px solid #FE6B7E; color:#FE6B7E">Learn More</a>
+                            <a href="#" class="px-4 py-2 inline-block mt-2 rounded" style="border: 2px solid #940505; color:#fff">Learn More</a>
 
                         </div>
-                        <div class="absolute -bottom-1 right-0">
-                            <img class="w-36" src="./images/cta-img-2 1.svg" alt="">
+                        <div class="absolute -bottom-1 right-0" style="margin-bottom: 20px;">
+                            <img class="w-36" src="./images/rccg-logo-unscreen.gif" alt="">
 
                         </div>
 
@@ -152,16 +261,16 @@
 
                 </div>
                 <div class="p-4 md:w-1/2 w-full">
-                    <div class="rounded-lg px-4 py-8 relative overflow-hidden" style="background-color: #CEDDFF;">
+                    <div class="rounded-lg px-4 py-8 relative overflow-hidden" style="background-color: rgba(148, 5, 5, 0.905);">
                         <div class="pr-24">
-                            <h3 class="font-medium text-lg">Utilize your software data</h3>
+                            <h3 class="font-medium text-lg">Mission</h3>
                             <p class="mt-3">Progressively reinvent model and niche revolutionary benefits for integrated
                             </p>
-                            <a href="#" class="px-4 py-2 inline-block mt-2 rounded" style="border: 2px solid #175CFF; color:#175CFF">Learn More</a>
+                            <a href="#" class="px-4 py-2 inline-block mt-2 rounded" style="border: 2px solid #0B163F; color:#fff">Learn More</a>
 
                         </div>
-                        <div class="absolute -bottom-1 right-0">
-                            <img class="w-36" src="./images/promo 1.svg" alt="">
+                        <div class="absolute -bottom-1 right-0" style="margin-bottom: 20px;">
+                            <img class="w-36" src="./images/rccg-logo-unscreen.gif" alt="">
 
                         </div>
 
@@ -178,7 +287,7 @@
     <!-- About Section Ends here -->
 
     <!-- Services section starts here -->
-    <section id="services">
+    <!-- <section id="services">
         <div class="container mx-auto">
             <div class="px-5 pt-32 pb-8 flex md:flex-row md:justify-between flex-col items-center">
 
@@ -289,12 +398,12 @@
         </div>
 
 
-    </section>
+    </section> -->
 
     <!-- services section ends here -->
 
     <!-- price section starts here -->
-    <section id="price">
+    <!-- <section id="price">
         <div class="container mx-auto px-5 py-32">
             <div class="text-center">
                 <span class="text-blue-500">Pricing</span>
@@ -387,12 +496,12 @@
 
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Price section ends here -->
 
     <!-- Page section start here -->
-    <section id="pages">
+    <!-- <section id="pages">
         <div class="bg-gray-100">
             <div class="container mx-auto px-5 py-32 min-h-screen">
                 <div class="text-center">
@@ -452,14 +561,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Page section ends here -->
 
     <!-- shop section starts here -->
-    <section class="py-32" id="shop">
+    <!-- <section class="py-32" id="shop">
         <div class="container mx-auto px-5 py-32  text-white text-center bg-[#021049]">
-            <span class="text-yellow-400">Get Free Support</span>
+            <span class="text-yellow-400">Join YAYA WaitList</span>
             <h2 class="mt-2 text-2xl md:text-3xl font-medium">Start your 14 days trial</h2>
             <p class="lg:w-1/2 mx-auto leading-relaxed">Credibly grow premier ideas rather than bricks and clicks stratefic theme areas distributed for stand-alone web-readiness</p>
             <a href="#" class="inline-block px-8 py-2 bg-blue-500 mt-3">Try Now</a>
@@ -470,7 +579,7 @@
                 <li class=" flex items-center m-4"><span class="mr-2 w-3 h-3 rounded-full bg-white"></span> Cancel anytime</li>
             </ul>
         </div>
-    </section>
+    </section> -->
     <!-- shop section ends here -->
 
     <!-- Contacts section start here -->
@@ -478,11 +587,11 @@
         <div class="container mx-auto px-5 py-32 text-white">
             <div class="flex flex-wrap">
                 <div class="lg:w-1/2 md:w-2/3 w-full mb-10">
-                    <h2 class="font-medium tracking-widest text-lg mb-2">Traffi<span style="color: #FE6B7E;">CO</span></h2>
+                    <h2 class="font-medium tracking-widest text-lg mb-2"><img src="images/rccg-logo-unscreen.gif" width="80px" alt=""></h2>
                     <p class="max-w-sm">Credibly grow premier ideas rather than bricks and clicks stratefic theme </p>
-                    <form action="" class="mt-2 flex sm:flex-row flex-col">
+                    <form action="" class="mt-2 flex sm:flex-row flex-col" id="sub">
                         <input class="px-4 py-2 rounded-md" type="email" placeholder="youremail@domain.com">
-                        <button type="submit" class="sm:ml-2 px-4 py-2 bg-[#FE6B7E] text-white rounded-md sm:mt-0 mt-2 ml-0 self-start hover:bg-[#175CFF]">Subscribe</button>
+                        <button style="background-color: #940505;" type="submit" class="sm:ml-2 px-4 py-2 text-white rounded-md sm:mt-0 mt-2 ml-0 self-start hover:bg-[#175CFF]">Subscribe</button>
                     </form>
                 </div>
                 <div class="lg:w-1/6 md:w-1/3 w-full">
@@ -546,6 +655,18 @@
     </footer>
 
     <!-- contacts section ends here -->
+    <script>
+        window.onscroll = function() {
+            myFunction();
+        }
+
+        function myFunction() {
+            var winscrll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winscrll / height) * 100;
+            document.getElementById('myBar').style.width = scrolled + "%";
+        }
+    </script>
 </body>
 
 </html>
